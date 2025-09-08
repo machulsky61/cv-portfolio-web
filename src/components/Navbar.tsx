@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Home, User, Code, Briefcase, Mail } from "lucide-react";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -55,7 +56,7 @@ export default function Navbar() {
           </motion.div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-1">
+          <div className="hidden md:flex items-center space-x-1">
             {navItems.map((item) => (
               <Button
                 key={item.name}
@@ -66,10 +67,14 @@ export default function Navbar() {
                 {item.name}
               </Button>
             ))}
+            <div className="ml-2">
+              <ThemeToggle />
+            </div>
           </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden">
+          {/* Mobile menu button & theme toggle */}
+          <div className="md:hidden flex items-center space-x-1">
+            <ThemeToggle />
             <Button
               variant="ghost"
               size="sm"
