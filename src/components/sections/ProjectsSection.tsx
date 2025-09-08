@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github, BarChart3, Brain, TrendingUp, Database } from "lucide-react";
+import Image from "next/image";
 
 interface ProjectLinks {
   github: string;
@@ -32,7 +33,7 @@ export default function ProjectsSection() {
       links: {
         github: "https://github.com/machulsky61",
       },
-      image: "/api/placeholder/400/250"
+      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=500&h=300&fit=crop&crop=entropy&auto=format&q=80"
     },
     {
       title: "Semantic Search RAG System",
@@ -43,7 +44,7 @@ export default function ProjectsSection() {
       links: {
         github: "https://github.com/machulsky61",
       },
-      image: "/api/placeholder/400/250"
+      image: "https://images.unsplash.com/photo-1518186233392-c232efbf2373?w=500&h=300&fit=crop&crop=entropy&auto=format&q=80"
     },
     {
       title: "Melanoma Detection Computer Vision Model",
@@ -54,7 +55,7 @@ export default function ProjectsSection() {
       links: {
         github: "https://github.com/machulsky61",
       },
-      image: "/api/placeholder/400/250"
+      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=500&h=300&fit=crop&crop=entropy&auto=format&q=80"
     },
     {
       title: "Dream Journal NLP Analysis",
@@ -65,7 +66,7 @@ export default function ProjectsSection() {
       links: {
         github: "https://github.com/machulsky61",
       },
-      image: "/api/placeholder/400/250"
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop&crop=entropy&auto=format&q=80"
     }
   ];
 
@@ -111,10 +112,17 @@ export default function ProjectsSection() {
           {projects.map((project) => (
             <motion.div key={project.title} variants={itemVariants}>
               <Card className="h-full hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden group">
-                <div className="aspect-video bg-gradient-to-br from-muted to-muted/50 relative overflow-hidden">
+                <div className="aspect-video relative overflow-hidden">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-br from-black/20 to-black/40 group-hover:from-black/10 group-hover:to-black/20 transition-all duration-300" />
                   <div className="absolute top-4 left-4">
-                    <div className={`p-2 rounded-lg ${project.color}`}>
+                    <div className={`p-2 rounded-lg ${project.color} backdrop-blur-sm`}>
                       {project.icon}
                     </div>
                   </div>

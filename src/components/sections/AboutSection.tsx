@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { User, Target, BookOpen } from "lucide-react";
+import Image from "next/image";
 
 export default function AboutSection() {
   const containerVariants = {
@@ -21,8 +22,21 @@ export default function AboutSection() {
   };
 
   return (
-    <section className="py-20 px-4 bg-background">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-20 px-4 bg-background relative overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10"></div>
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <defs>
+            <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+              <path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" strokeWidth="0.5"/>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#grid)" />
+        </svg>
+      </div>
+
+      <div className="max-w-6xl mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -100,8 +114,18 @@ export default function AboutSection() {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          <Card className="max-w-4xl mx-auto">
-            <CardContent className="p-8">
+          <Card className="max-w-4xl mx-auto relative overflow-hidden">
+            {/* Subtle background pattern */}
+            <div className="absolute inset-0 opacity-5">
+              <Image
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop&crop=entropy&auto=format&q=80"
+                alt="Data visualization background"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-background/80"></div>
+            </div>
+            <CardContent className="p-8 relative z-10">
               <h3 className="text-2xl font-semibold mb-4">What Drives Me?</h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 I firmly believe that data has the power to improve lives and transform industries. 
