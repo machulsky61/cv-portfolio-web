@@ -30,10 +30,10 @@ export default function AboutSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Sobre Mí</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">About Me</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Soy un científico de datos recién graduado con una pasión innata por 
-            descubrir patrones ocultos en los datos y crear soluciones que impacten positivamente.
+            AI & ML Engineer with 3+ years of experience in Python, specializing in developing 
+            and deploying production-grade AI systems and LLM-powered solutions.
           </p>
         </motion.div>
 
@@ -50,11 +50,11 @@ export default function AboutSection() {
                 <div className="mb-4 inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10">
                   <User className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Mi Historia</h3>
+                <h3 className="text-xl font-semibold mb-3">My Background</h3>
                 <p className="text-muted-foreground">
-                  Desde que descubrí el mundo de los datos durante mis estudios universitarios, 
-                  me he dedicado a dominar las herramientas y técnicas que me permiten 
-                  extraer valor de la información.
+                  Since discovering the world of data during my university studies, 
+                  I&apos;ve dedicated myself to mastering the tools and techniques that allow me 
+                  to extract valuable insights from information.
                 </p>
               </CardContent>
             </Card>
@@ -66,11 +66,11 @@ export default function AboutSection() {
                 <div className="mb-4 inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10">
                   <Target className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Mi Enfoque</h3>
+                <h3 className="text-xl font-semibold mb-3">My Approach</h3>
                 <p className="text-muted-foreground">
-                  Me especializo en transformar datos complejos en insights accionables, 
-                  combinando rigor científico con creatividad para resolver problemas 
-                  del mundo real.
+                  I specialize in transforming complex data into actionable insights, 
+                  combining scientific rigor with creativity to solve real-world problems 
+                  through scalable AI systems.
                 </p>
               </CardContent>
             </Card>
@@ -82,11 +82,11 @@ export default function AboutSection() {
                 <div className="mb-4 inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10">
                   <BookOpen className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Aprendizaje Continuo</h3>
+                <h3 className="text-xl font-semibold mb-3">Continuous Learning</h3>
                 <p className="text-muted-foreground">
-                  El campo de la ciencia de datos evoluciona constantemente, y me mantengo 
-                  actualizado con las últimas tecnologías, algoritmos y mejores prácticas 
-                  de la industria.
+                  The field of data science constantly evolves, and I stay updated 
+                  with the latest technologies, algorithms, and industry best practices, 
+                  particularly in LLM operations and AI Agent development.
                 </p>
               </CardContent>
             </Card>
@@ -102,13 +102,13 @@ export default function AboutSection() {
         >
           <Card className="max-w-4xl mx-auto">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-semibold mb-4">¿Qué me motiva?</h3>
+              <h3 className="text-2xl font-semibold mb-4">What Drives Me?</h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Creo firmemente que los datos tienen el poder de mejorar vidas y transformar industrias. 
-                Mi objetivo es ser parte de esa transformación, aplicando machine learning y análisis 
-                avanzado para crear soluciones innovadoras que generen un impacto real y medible. 
-                Busco constantemente oportunidades para crecer profesionalmente mientras contribuyo 
-                al éxito de equipos dinámicos y proyectos desafiantes.
+                I firmly believe that data has the power to improve lives and transform industries. 
+                My goal is to be part of that transformation, applying machine learning and advanced analysis 
+                to create innovative solutions that generate real, measurable impact. I&apos;m passionate about 
+                building scalable, interpretable AI systems and eager to tackle complex challenges in 
+                cutting-edge AI environments.
               </p>
             </CardContent>
           </Card>

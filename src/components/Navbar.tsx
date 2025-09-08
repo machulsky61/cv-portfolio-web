@@ -18,11 +18,11 @@ export default function Navbar() {
   }, []);
 
   const navItems = [
-    { name: "Inicio", href: "#hero", icon: <Home className="h-4 w-4" /> },
-    { name: "Sobre Mí", href: "#about", icon: <User className="h-4 w-4" /> },
+    { name: "Home", href: "#hero", icon: <Home className="h-4 w-4" /> },
+    { name: "About", href: "#about", icon: <User className="h-4 w-4" /> },
     { name: "Skills", href: "#skills", icon: <Code className="h-4 w-4" /> },
-    { name: "Proyectos", href: "#projects", icon: <Briefcase className="h-4 w-4" /> },
-    { name: "Contacto", href: "#contact", icon: <Mail className="h-4 w-4" /> },
+    { name: "Projects", href: "#projects", icon: <Briefcase className="h-4 w-4" /> },
+    { name: "Contact", href: "#contact", icon: <Mail className="h-4 w-4" /> },
   ];
 
   const scrollToSection = (href: string) => {

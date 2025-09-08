@@ -6,52 +6,64 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github, BarChart3, Brain, TrendingUp, Database } from "lucide-react";
 
+interface ProjectLinks {
+  github: string;
+  demo?: string;
+}
+
+interface Project {
+  title: string;
+  description: string;
+  tech: string[];
+  icon: React.ReactElement;
+  color: string;
+  links: ProjectLinks;
+  image: string;
+}
+
 export default function ProjectsSection() {
-  const projects = [
+  const projects: Project[] = [
     {
-      title: "Análisis Predictivo de Ventas",
-      description: "Desarrollo de un modelo de machine learning para predecir ventas mensuales con una precisión del 92%. Incluye análisis de seasonalidad y factores externos.",
-      tech: ["Python", "Scikit-learn", "Pandas", "XGBoost", "Streamlit"],
-      icon: <TrendingUp className="h-6 w-6" />,
-      color: "bg-blue-500/10 text-blue-600",
-      links: {
-        github: "https://github.com/tu-username/sales-prediction",
-        demo: "https://tu-demo.streamlit.app/"
-      },
-      image: "/api/placeholder/400/250"
-    },
-    {
-      title: "Sistema de Recomendación",
-      description: "Implementación de un sistema de recomendación híbrido que combina filtrado colaborativo y basado en contenido para una plataforma e-commerce.",
-      tech: ["Python", "TensorFlow", "PostgreSQL", "FastAPI", "Docker"],
+      title: "AI Agents Alignment: Scalable AI Safety via Debate",
+      description: "Research exploring debate mechanisms for AI alignment. Implemented full simulation game (zero-sum) of a debate protocol using PyTorch, including computer vision models, turn-based strategies, and agent asymmetry capabilities.",
+      tech: ["Python", "PyTorch", "Computer Vision", "Game Theory", "AI Safety"],
       icon: <Brain className="h-6 w-6" />,
       color: "bg-purple-500/10 text-purple-600",
       links: {
-        github: "https://github.com/tu-username/recommendation-system",
-        demo: "https://tu-api.herokuapp.com/docs"
+        github: "https://github.com/machulsky61",
       },
       image: "/api/placeholder/400/250"
     },
     {
-      title: "Dashboard de Análisis de Datos",
-      description: "Dashboard interactivo para visualización y análisis de datos de negocio en tiempo real. Incluye métricas KPI y alertas automatizadas.",
-      tech: ["Python", "Plotly", "Dash", "Redis", "AWS", "PostgreSQL"],
-      icon: <BarChart3 className="h-6 w-6" />,
+      title: "Semantic Search RAG System",
+      description: "Production-grade semantic search Agentic RAG system using Gemini LLM and Google embeddings, enabling natural language queries for a 544-product catalog. Deployed on AWS with high availability.",
+      tech: ["Python", "Gemini LLM", "RAG", "Google Embeddings", "AWS", "Vector Search"],
+      icon: <Database className="h-6 w-6" />,
+      color: "bg-blue-500/10 text-blue-600",
+      links: {
+        github: "https://github.com/machulsky61",
+      },
+      image: "/api/placeholder/400/250"
+    },
+    {
+      title: "Melanoma Detection Computer Vision Model",
+      description: "PyTorch-based computer vision model for melanoma detection achieving 80% recall. Includes comprehensive model evaluation, validation techniques, and performance optimization.",
+      tech: ["Python", "PyTorch", "Computer Vision", "OpenCV", "Medical Imaging"],
+      icon: <TrendingUp className="h-6 w-6" />,
       color: "bg-green-500/10 text-green-600",
       links: {
-        github: "https://github.com/tu-username/analytics-dashboard",
-        demo: "https://tu-dashboard.herokuapp.com/"
+        github: "https://github.com/machulsky61",
       },
       image: "/api/placeholder/400/250"
     },
     {
-      title: "Procesamiento de Big Data",
-      description: "Pipeline de procesamiento de datos masivos para análisis de sentimientos en redes sociales usando Apache Spark y técnicas de NLP.",
-      tech: ["Python", "PySpark", "Kafka", "NLTK", "Docker", "AWS EMR"],
-      icon: <Database className="h-6 w-6" />,
+      title: "Dream Journal NLP Analysis",
+      description: "Web scraping and NLP-based analysis of dream narratives, including sentiment analysis, coherence evaluation, and topic modeling. Investigated relationships between dreams and lottery numbers using statistical analysis.",
+      tech: ["Python", "NLP", "Web Scraping", "Sentiment Analysis", "Topic Modeling"],
+      icon: <BarChart3 className="h-6 w-6" />,
       color: "bg-orange-500/10 text-orange-600",
       links: {
-        github: "https://github.com/tu-username/big-data-pipeline",
+        github: "https://github.com/machulsky61",
       },
       image: "/api/placeholder/400/250"
     }
@@ -82,10 +94,10 @@ export default function ProjectsSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Proyectos Destacados</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Featured Projects</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Una selección de proyectos que demuestran mi experiencia en ciencia de datos, 
-            machine learning y desarrollo de soluciones end-to-end
+            A selection of projects demonstrating my expertise in data science, 
+            machine learning, and end-to-end AI solution development
           </p>
         </motion.div>
 
@@ -156,7 +168,7 @@ export default function ProjectsSection() {
                           rel="noopener noreferrer"
                         >
                           <Github className="h-4 w-4 mr-2" />
-                          Código
+                          Code
                         </a>
                       </Button>
                     )}
@@ -187,16 +199,16 @@ export default function ProjectsSection() {
           className="text-center mt-12"
         >
           <p className="text-muted-foreground mb-4">
-            ¿Quieres ver más proyectos?
+            Want to see more projects?
           </p>
           <Button variant="outline" size="lg" asChild>
             <a 
-              href="https://github.com/tu-username"
+              href="https://github.com/machulsky61"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Github className="h-4 w-4 mr-2" />
-              Ver todos en GitHub
+              View all on GitHub
             </a>
           </Button>
         </motion.div>

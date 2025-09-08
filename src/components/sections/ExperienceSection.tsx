@@ -8,70 +8,72 @@ import { GraduationCap, Briefcase, Calendar, MapPin, Award, BookOpen } from "luc
 export default function ExperienceSection() {
   const education = [
     {
-      title: "Licenciatura en Ciencia de Datos",
-      institution: "Universidad Nacional de Buenos Aires",
-      period: "2020 - 2024",
+      title: "Master in Data Science (Artificial Intelligence)",
+      institution: "University of Buenos Aires",
+      period: "2023 - 2025",
       location: "Buenos Aires, Argentina",
-      description: "Graduado con honores. Especialización en Machine Learning y Análisis Estadístico Avanzado.",
-      highlights: ["Promedio: 9.2/10", "Tesis sobre Deep Learning", "Premio al mejor proyecto final"]
+      description: "Advanced graduate program focusing on AI, machine learning, and statistical modeling with emphasis on practical applications.",
+      highlights: ["AI & ML specialization", "Statistical modeling", "Research methodology"]
     },
     {
-      title: "Certificación en AWS Machine Learning",
-      institution: "Amazon Web Services",
-      period: "2024",
-      location: "Online",
-      description: "Certificación profesional en implementación de soluciones de ML en la nube.",
-      highlights: ["Machine Learning Engineer", "Sagemaker", "MLOps"]
+      title: "Bachelor in Data Science",
+      institution: "University of Buenos Aires",
+      period: "2020 - 2023",
+      location: "Buenos Aires, Argentina",
+      description: "Comprehensive undergraduate program combining Mathematics, Computing, and Statistics for data-driven problem solving.",
+      highlights: ["Mathematics foundation", "Computer Science", "Statistical analysis"]
     },
     {
-      title: "Curso Avanzado de Python para Data Science",
-      institution: "DataCamp",
-      period: "2023",
-      location: "Online",
-      description: "Specialización intensiva en herramientas avanzadas de Python para análisis de datos.",
-      highlights: ["Pandas avanzado", "Scikit-learn", "Visualización de datos"]
+      title: "English Proficiency (FCE B2)",
+      institution: "Cambridge English",
+      period: "Certified",
+      location: "International",
+      description: "Cambridge First Certificate in English demonstrating upper-intermediate English proficiency for professional contexts.",
+      highlights: ["Business English", "Technical communication", "Academic writing"]
     }
   ];
 
   const experience = [
     {
-      title: "Data Science Intern",
-      company: "TechStart Solutions",
-      period: "Jun 2024 - Sep 2024",
+      title: "Data Scientist",
+      company: "NETV S.A.",
+      period: "August 2024 - Present",
       location: "Buenos Aires, Argentina",
-      description: "Desarrollo de modelos predictivos para optimización de procesos de negocio y análisis de customer churn.",
+      description: "Leading ML projects and architecting production-grade AI systems including semantic search RAG systems and computer vision models.",
       achievements: [
-        "Mejoré la precisión del modelo de churn en un 15%",
-        "Automaticé reportes que ahorraron 10 horas/semana",
-        "Implementé dashboard interactivo con Streamlit"
+        "Architected and deployed production-grade semantic search Agentic RAG system using Gemini LLM",
+        "Developed PyTorch-based computer vision model for melanoma detection (80% recall)",
+        "Optimized large-scale SQL pipelines, reducing report generation time by over 95%",
+        "Led data sub-team through mentorship, code reviews, and daily standups"
       ],
-      tech: ["Python", "Scikit-learn", "PostgreSQL", "Streamlit", "Git"]
+      tech: ["Python", "PyTorch", "Gemini LLM", "RAG", "AWS", "Docker", "Flask", "PostgreSQL"]
     },
     {
-      title: "Analista de Datos Jr.",
-      company: "Marketing Analytics Corp",
-      period: "Ene 2024 - May 2024",
-      location: "Buenos Aires, Argentina",
-      description: "Análisis de campañas de marketing digital y desarrollo de métricas de performance para clientes.",
+      title: "Freelance ML & Backend Developer",
+      company: "LAS MERCEDES",
+      period: "March 2025 - Present",
+      location: "Remote",
+      description: "Designed and built custom automated system to reconcile and analyze 500+ monthly POS transactions with secure backend API.",
       achievements: [
-        "Desarrollé sistema de attribution modeling",
-        "Reduje tiempo de reporting en 40%",
-        "Creé 15+ dashboards para diferentes clientes"
+        "Built end-to-end automated reconciliation system for 500+ monthly transactions",
+        "Developed secure backend API with Flask and full CRUD functionality",
+        "Generated automated reports and dashboards delivering key business insights"
       ],
-      tech: ["Python", "SQL", "Tableau", "Google Analytics", "Excel"]
+      tech: ["Python", "Flask", "AWS", "PostgreSQL", "Pandas", "Scikit-learn"]
     },
     {
-      title: "Investigación Académica",
-      company: "Universidad Nacional de Buenos Aires",
-      period: "Mar 2023 - Dic 2023",
+      title: "Data Analyst & Data Developer",
+      company: "RUSSO SEGUROS",
+      period: "November 2023 - May 2025",
       location: "Buenos Aires, Argentina",
-      description: "Proyecto de investigación sobre aplicación de NLP en análisis de sentimientos en redes sociales.",
+      description: "Automated data ingestion processes and maintained PostgreSQL databases for insurance policy and payment data analysis.",
       achievements: [
-        "Paper aceptado en conferencia nacional",
-        "Desarrollé nuevo algoritmo de clasificación",
-        "Mentoreé a 3 estudiantes junior"
+        "Automated insurance policy and payment data ingestion using Python and Selenium",
+        "Maintained and optimized PostgreSQL databases ensuring data integrity and performance",
+        "Built automated reports for financial and operational analysis with key KPIs",
+        "Implemented predictive models for business trend forecasting"
       ],
-      tech: ["Python", "NLTK", "spaCy", "TensorFlow", "Jupyter"]
+      tech: ["Python", "PostgreSQL", "Pandas", "Selenium", "Matplotlib", "Seaborn"]
     }
   ];
 
@@ -100,9 +102,9 @@ export default function ExperienceSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Experiencia & Educación</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Experience & Education</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Mi trayectoria académica y profesional en el mundo de la ciencia de datos
+            My academic and professional journey in the world of data science
           </p>
         </motion.div>
 
@@ -118,7 +120,7 @@ export default function ExperienceSection() {
               <div className="p-2 rounded-lg bg-primary/10">
                 <Briefcase className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="text-2xl font-bold">Experiencia Profesional</h3>
+              <h3 className="text-2xl font-bold">Professional Experience</h3>
             </div>
             
             <div className="space-y-6">
@@ -148,7 +150,7 @@ export default function ExperienceSection() {
                       <div className="mb-4">
                         <h5 className="text-sm font-semibold mb-2 flex items-center gap-1">
                           <Award className="h-3 w-3" />
-                          Logros principales:
+                          Key Achievements:
                         </h5>
                         <ul className="text-sm text-muted-foreground space-y-1">
                           {exp.achievements.map((achievement, i) => (
@@ -185,7 +187,7 @@ export default function ExperienceSection() {
               <div className="p-2 rounded-lg bg-primary/10">
                 <GraduationCap className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="text-2xl font-bold">Educación & Certificaciones</h3>
+              <h3 className="text-2xl font-bold">Education & Certifications</h3>
             </div>
             
             <div className="space-y-6">
@@ -215,7 +217,7 @@ export default function ExperienceSection() {
                       <div>
                         <h5 className="text-sm font-semibold mb-2 flex items-center gap-1">
                           <BookOpen className="h-3 w-3" />
-                          Destacados:
+                          Highlights:
                         </h5>
                         <ul className="text-sm text-muted-foreground space-y-1">
                           {edu.highlights.map((highlight, i) => (

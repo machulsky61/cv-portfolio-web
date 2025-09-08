@@ -10,20 +10,20 @@ export default function ContactSection() {
     {
       icon: <Mail className="h-5 w-5" />,
       label: "Email",
-      value: "joaquin.machulsky@email.com",
-      href: "mailto:joaquin.machulsky@email.com",
+      value: "joaquinmachulsky@gmail.com",
+      href: "mailto:joaquinmachulsky@gmail.com",
       color: "bg-blue-500/10 text-blue-600"
     },
     {
       icon: <Phone className="h-5 w-5" />,
-      label: "Teléfono",
-      value: "+54 9 11 1234-5678",
-      href: "tel:+5491112345678",
+      label: "Phone",
+      value: "+54 380 495 1391",
+      href: "tel:+5438049513891",
       color: "bg-green-500/10 text-green-600"
     },
     {
       icon: <MapPin className="h-5 w-5" />,
-      label: "Ubicación",
+      label: "Location",
       value: "Buenos Aires, Argentina",
       href: "https://maps.google.com/?q=Buenos+Aires,Argentina",
       color: "bg-red-500/10 text-red-600"
@@ -62,10 +62,10 @@ export default function ContactSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">¡Conectemos!</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Let&apos;s Connect!</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Estoy siempre abierto a nuevas oportunidades, colaboraciones o simplemente 
-            una charla sobre ciencia de datos. ¡No dudes en contactarme!
+            I&apos;m always open to new opportunities, collaborations, or simply 
+            a chat about data science. Don&apos;t hesitate to reach out!
           </p>
         </motion.div>
 
@@ -111,22 +111,22 @@ export default function ContactSection() {
         >
           <Card className="bg-gradient-to-br from-primary/5 to-primary/10 border-primary/20">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-bold mb-4">¿Buscas un Data Scientist?</h3>
+              <h3 className="text-2xl font-bold mb-4">Looking for a Data Scientist?</h3>
               <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                Estoy disponible para oportunidades full-time, proyectos freelance, 
-                colaboraciones en investigación o mentorías. Mi experiencia incluye 
-                machine learning, análisis predictivo, visualización de datos y desarrollo end-to-end.
+                I&apos;m available for full-time opportunities, freelance projects, 
+                research collaborations, or mentoring. My expertise includes 
+                LLM systems, RAG architectures, computer vision, and end-to-end ML development.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Button size="lg" className="font-semibold" asChild>
-                  <a href="mailto:joaquin.machulsky@email.com">
+                  <a href="mailto:joaquinmachulsky@gmail.com">
                     <Mail className="mr-2 h-4 w-4" />
-                    Enviar Email
+                    Send Email
                   </a>
                 </Button>
                 <Button variant="outline" size="lg" className="font-semibold">
                   <Download className="mr-2 h-4 w-4" />
-                  Descargar CV
+                  Download CV
                 </Button>
               </div>
             </CardContent>
@@ -157,7 +157,7 @@ export default function ContactSection() {
             <Linkedin className="h-6 w-6 group-hover:text-primary transition-colors" />
           </a>
           <a
-            href="mailto:joaquin.machulsky@email.com"
+            href="mailto:joaquinmachulsky@gmail.com"
             className="p-4 rounded-full border border-border hover:bg-accent hover:scale-110 transition-all duration-300 group"
           >
             <Mail className="h-6 w-6 group-hover:text-primary transition-colors" />
@@ -172,10 +172,10 @@ export default function ContactSection() {
           className="text-center mt-16 pt-8 border-t border-border"
         >
           <p className="text-muted-foreground">
-            Construido con ❤️ usando Next.js, TypeScript y Tailwind CSS
+            Built with ❤️ using Next.js, TypeScript and Tailwind CSS
           </p>
           <p className="text-sm text-muted-foreground/70 mt-2">
-            © 2024 Joaquín Machulsky. Todos los derechos reservados.
+            © 2024 Joaquin Salvador Machulsky. All rights reserved.
           </p>
         </motion.div>
       </div>

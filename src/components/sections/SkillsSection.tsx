@@ -17,40 +17,40 @@ import {
 export default function SkillsSection() {
   const skillCategories = [
     {
-      title: "Lenguajes de Programación",
+      title: "Programming Languages",
       icon: <Code2 className="h-6 w-6" />,
       color: "bg-blue-500/10 text-blue-600",
-      skills: ["Python", "R", "SQL", "JavaScript", "Java", "Scala"]
+      skills: ["Python", "SQL", "C++", "JavaScript", "HTML"]
     },
     {
-      title: "Machine Learning & IA",
+      title: "AI/ML & LLMs",
       icon: <Brain className="h-6 w-6" />,
       color: "bg-purple-500/10 text-purple-600",
-      skills: ["Scikit-learn", "TensorFlow", "PyTorch", "Keras", "XGBoost", "LightGBM", "Prophet", "Transformers"]
+      skills: ["Gemini LLM", "RAG Systems", "Semantic Search", "Embeddings", "PyTorch", "TensorFlow", "Scikit-learn", "Computer Vision", "NLP"]
     },
     {
-      title: "Análisis de Datos",
+      title: "Data & Backend",
       icon: <BarChart3 className="h-6 w-6" />,
       color: "bg-green-500/10 text-green-600",
-      skills: ["Pandas", "NumPy", "SciPy", "Matplotlib", "Seaborn", "Plotly", "ggplot2", "Statsmodels"]
-    },
-    {
-      title: "Bases de Datos",
-      icon: <Database className="h-6 w-6" />,
-      color: "bg-orange-500/10 text-orange-600",
-      skills: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Cassandra", "Snowflake", "BigQuery"]
+      skills: ["Pandas", "NumPy", "OpenCV", "Flask", "SQLAlchemy", "Marshmallow", "Selenium", "SciPy", "Matplotlib", "Seaborn"]
     },
     {
       title: "Cloud & DevOps",
       icon: <Cloud className="h-6 w-6" />,
       color: "bg-cyan-500/10 text-cyan-600",
-      skills: ["AWS", "Docker", "Kubernetes", "Apache Spark", "Airflow", "MLflow", "Terraform"]
+      skills: ["AWS (EC2, S3, IAM, RDS)", "Elastic Beanstalk", "CodePipeline", "Docker", "Google Cloud APIs", "Postman"]
     },
     {
-      title: "Herramientas & Otros",
+      title: "Databases",
+      icon: <Database className="h-6 w-6" />,
+      color: "bg-orange-500/10 text-orange-600",
+      skills: ["PostgreSQL", "MySQL", "SQL Server", "Vector Search", "JSON-based storage"]
+    },
+    {
+      title: "Tools & Collaboration",
       icon: <GitBranch className="h-6 w-6" />,
       color: "bg-red-500/10 text-red-600",
-      skills: ["Git", "Jupyter", "VS Code", "Linux", "Apache Kafka", "Tableau", "Power BI", "Excel"]
+      skills: ["Git", "GitHub", "React", "Material UI", "Jupyter", "VS Code"]
     }
   ];
 
@@ -71,24 +71,24 @@ export default function SkillsSection() {
 
   const specialties = [
     {
-      title: "Análisis Predictivo",
+      title: "LLM Operations",
       icon: <TrendingUp className="h-5 w-5" />,
-      description: "Desarrollo de modelos para predicción y forecasting"
+      description: "Production-grade LLM systems and RAG architectures"
     },
     {
-      title: "Deep Learning",
+      title: "AI Agent Development",
       icon: <Cpu className="h-5 w-5" />,
-      description: "Redes neuronales y arquitecturas avanzadas"
+      description: "Building scalable AI agents and debate mechanisms"
     },
     {
-      title: "Big Data",
+      title: "Computer Vision",
       icon: <Database className="h-5 w-5" />,
-      description: "Procesamiento y análisis de grandes volúmenes de datos"
+      description: "PyTorch-based models for medical imaging and detection"
     },
     {
-      title: "MLOps",
+      title: "Time Series Analysis",
       icon: <Cloud className="h-5 w-5" />,
-      description: "Implementación y gestión de modelos en producción"
+      description: "Forecasting models for market analysis and trends"
     }
   ];
 
@@ -102,9 +102,9 @@ export default function SkillsSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Habilidades Técnicas</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Technical Skills</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Un conjunto sólido de herramientas y tecnologías para abordar cualquier desafío en ciencia de datos
+            A comprehensive toolkit of technologies and frameworks for tackling any data science challenge
           </p>
         </motion.div>
 
@@ -145,7 +145,7 @@ export default function SkillsSection() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h3 className="text-3xl font-bold mb-8">Especialidades</h3>
+          <h3 className="text-3xl font-bold mb-8">Specializations</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {specialties.map((specialty, index) => (
               <motion.div

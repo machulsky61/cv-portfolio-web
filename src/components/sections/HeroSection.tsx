@@ -20,7 +20,7 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Joaquín Machulsky
+            Joaquin Salvador Machulsky
           </motion.h1>
           
           <motion.p 
@@ -29,17 +29,18 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Data Scientist
+            AI & ML Engineer | Data Scientist | LLM Specialist
           </motion.p>
           
           <motion.p 
-            className="text-lg md:text-xl text-muted-foreground/80 max-w-2xl mx-auto"
+            className="text-lg md:text-xl text-muted-foreground/80 max-w-3xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            Recién graduado apasionado por transformar datos en insights valiosos 
-            y construir soluciones innovadoras con machine learning
+            Data Scientist with 3+ years of experience specializing in production-grade AI systems, 
+            LLM-powered solutions, and RAG architectures. Master&apos;s in Data Science with expertise 
+            in deploying scalable ML pipelines using PyTorch, AWS, and cloud infrastructure.
           </motion.p>
         </motion.div>
 
@@ -51,11 +52,11 @@ export default function HeroSection() {
         >
           <Button size="lg" className="font-semibold">
             <Mail className="mr-2 h-4 w-4" />
-            Contáctame
+            Contact Me
           </Button>
           <Button variant="outline" size="lg" className="font-semibold">
             <Download className="mr-2 h-4 w-4" />
-            Descargar CV
+            Download CV
           </Button>
         </motion.div>
 
@@ -66,7 +67,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 1.0 }}
         >
           <a
-            href="https://github.com/tu-username"
+            href="https://github.com/machulsky61"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded-full border border-border hover:bg-accent hover:scale-110 transition-all duration-200"
@@ -74,7 +75,7 @@ export default function HeroSection() {
             <Github className="h-6 w-6" />
           </a>
           <a
-            href="https://linkedin.com/in/tu-profile"
+            href="https://www.linkedin.com/in/joaquin-machulsky"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded-full border border-border hover:bg-accent hover:scale-110 transition-all duration-200"
