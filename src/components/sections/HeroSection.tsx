@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-muted/20 px-4">
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-muted/20 px-4 pt-20 md:pt-0">
       <div className="max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
@@ -142,9 +142,9 @@ export default function HeroSection() {
           </motion.div>
         </div>
 
-        {/* Scroll Indicator */}
+        {/* Scroll Indicator - Hidden on mobile to avoid overlap */}
         <motion.div
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+          className="hidden lg:block absolute bottom-8 left-1/2 transform -translate-x-1/2"
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1.2, repeat: Infinity, repeatType: "reverse" }}

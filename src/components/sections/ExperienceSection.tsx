@@ -128,17 +128,17 @@ export default function ExperienceSection() {
                 <motion.div key={index} variants={itemVariants}>
                   <Card className="hover:shadow-lg transition-shadow duration-300">
                     <CardContent className="p-6">
-                      <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-3">
-                        <div>
-                          <h4 className="text-lg font-semibold text-foreground">{exp.title}</h4>
+                      <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-3 gap-3">
+                        <div className="flex-1">
+                          <h4 className="text-lg font-semibold text-foreground leading-tight">{exp.title}</h4>
                           <p className="text-primary font-medium">{exp.company}</p>
                         </div>
-                        <div className="flex flex-col sm:text-right text-sm text-muted-foreground mt-2 sm:mt-0">
-                          <div className="flex items-center gap-1">
+                        <div className="flex flex-col lg:text-right text-sm text-muted-foreground shrink-0">
+                          <div className="flex items-center gap-1 lg:justify-end">
                             <Calendar className="h-3 w-3" />
                             {exp.period}
                           </div>
-                          <div className="flex items-center gap-1 mt-1">
+                          <div className="flex items-center gap-1 mt-1 lg:justify-end">
                             <MapPin className="h-3 w-3" />
                             {exp.location}
                           </div>
@@ -195,19 +195,19 @@ export default function ExperienceSection() {
                 <motion.div key={index} variants={itemVariants}>
                   <Card className="hover:shadow-lg transition-shadow duration-300">
                     <CardContent className="p-6">
-                      <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-3">
-                        <div>
-                          <h4 className="text-lg font-semibold text-foreground">{edu.title}</h4>
+                      <div className="flex flex-col lg:flex-row lg:items-start mb-3 gap-4">
+                        <div className="flex-1 min-w-0">
+                          <h4 className="text-lg font-semibold text-foreground leading-tight pr-4">{edu.title}</h4>
                           <p className="text-primary font-medium">{edu.institution}</p>
                         </div>
-                        <div className="flex flex-col sm:text-right text-sm text-muted-foreground mt-2 sm:mt-0">
-                          <div className="flex items-center gap-1">
-                            <Calendar className="h-3 w-3" />
-                            {edu.period}
+                        <div className="flex flex-col lg:text-right text-sm text-muted-foreground shrink-0 lg:min-w-[140px]">
+                          <div className="flex items-center gap-1 lg:justify-end">
+                            <Calendar className="h-3 w-3 shrink-0" />
+                            <span className="whitespace-nowrap">{edu.period}</span>
                           </div>
-                          <div className="flex items-center gap-1 mt-1">
-                            <MapPin className="h-3 w-3" />
-                            {edu.location}
+                          <div className="flex items-center gap-1 mt-1 lg:justify-end">
+                            <MapPin className="h-3 w-3 shrink-0" />
+                            <span className="whitespace-nowrap">{edu.location}</span>
                           </div>
                         </div>
                       </div>
