@@ -124,7 +124,19 @@ export default function ContactSection() {
                     Send Email
                   </a>
                 </Button>
-                <Button variant="outline" size="lg" className="font-semibold">
+                <Button 
+                  variant="outline" 
+                  size="lg" 
+                  className="font-semibold"
+                  onClick={() => {
+                    const link = document.createElement('a');
+                    link.href = '/documents/Joaquin-Machulsky-CV.pdf';
+                    link.download = 'Joaquin-Machulsky-CV.pdf';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                  }}
+                >
                   <Download className="mr-2 h-4 w-4" />
                   Download CV
                 </Button>

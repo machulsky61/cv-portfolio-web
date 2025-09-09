@@ -52,11 +52,32 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
             >
-              <Button size="lg" className="font-semibold">
+              <Button 
+                size="lg" 
+                className="font-semibold"
+                onClick={() => {
+                  const element = document.querySelector('#contact');
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+              >
                 <Mail className="mr-2 h-4 w-4" />
                 Contact Me
               </Button>
-              <Button variant="outline" size="lg" className="font-semibold">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="font-semibold"
+                onClick={() => {
+                  const link = document.createElement('a');
+                  link.href = '/documents/Joaquin-Machulsky-CV.pdf';
+                  link.download = 'Joaquin-Machulsky-CV.pdf';
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                }}
+              >
                 <Download className="mr-2 h-4 w-4" />
                 Download CV
               </Button>
