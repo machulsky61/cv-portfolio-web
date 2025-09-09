@@ -103,7 +103,7 @@ export default function HeroSection() {
                     JM
                   </div>
                 </div>
-                {/* Uncomment and replace with your photo path:
+                { /* Uncomment and replace with your photo path: */
                 <Image
                   src="/images/profile/joaquin-profile.jpg"
                   alt="Joaquin Machulsky"
@@ -111,7 +111,7 @@ export default function HeroSection() {
                   className="object-cover"
                   priority
                 />
-                */}
+                }
               </div>
               
               {/* Decorative elements */}

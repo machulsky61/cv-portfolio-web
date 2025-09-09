@@ -64,7 +64,7 @@ export default function ProjectsSection() {
       icon: <BarChart3 className="h-6 w-6" />,
       color: "bg-orange-500/10 text-orange-600",
       links: {
-        github: "https://github.com/machulsky61",
+        github: "https://github.com/machulsky61/Dream-Journal",
       },
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop&crop=entropy&auto=format&q=80"
     }

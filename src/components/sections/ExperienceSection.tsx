@@ -38,7 +38,7 @@ export default function ExperienceSection() {
       title: "Data Scientist",
       company: "NETV S.A.",
       period: "August 2024 - Present",
-      location: "Buenos Aires, Argentina",
+      location: "Remote",
       description: "Leading ML projects and architecting production-grade AI systems including semantic search RAG systems and computer vision models.",
       achievements: [
         "Architected and deployed production-grade semantic search Agentic RAG system using Gemini LLM",
@@ -49,7 +49,7 @@ export default function ExperienceSection() {
       tech: ["Python", "PyTorch", "Gemini LLM", "RAG", "AWS", "Docker", "Flask", "PostgreSQL"]
     },
     {
-      title: "Freelance ML & Backend Developer",
+      title: "Freelance ML & Data Developer",
       company: "LAS MERCEDES",
       period: "March 2025 - Present",
       location: "Remote",

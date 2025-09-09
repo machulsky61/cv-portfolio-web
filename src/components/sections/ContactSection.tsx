@@ -141,7 +141,7 @@ export default function ContactSection() {
           className="flex justify-center gap-6"
         >
           <a
-            href="https://github.com/tu-username"
+            href="https://github.com/machulsky61"
             target="_blank"
             rel="noopener noreferrer"
             className="p-4 rounded-full border border-border hover:bg-accent hover:scale-110 transition-all duration-300 group"
@@ -175,7 +175,7 @@ export default function ContactSection() {
             Built with ❤️ using Next.js, TypeScript and Tailwind CSS
           </p>
           <p className="text-sm text-muted-foreground/70 mt-2">
-            © 2024 Joaquin Salvador Machulsky. All rights reserved.
+            © 2025 Joaquin Salvador Machulsky. All rights reserved.
           </p>
         </motion.div>
       </div>
