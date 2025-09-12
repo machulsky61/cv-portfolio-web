@@ -18,7 +18,7 @@ export default function ContactSection() {
       icon: <Phone className="h-5 w-5" />,
       label: "Phone",
       value: "+54 380 495 1391",
-      href: "tel:+5438049513891",
+      href: "tel:+543804951391",
       color: "bg-green-500/10 text-green-600"
     },
     {
